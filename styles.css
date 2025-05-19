@@ -226,6 +226,7 @@ h2 {
     #infos .info-container {
         flex-direction: column;
         padding: 2rem 1rem;
+        min-height: 100vh;      /* wenn die Section das ganze Viewport-Height einnehmen soll */
         justify-content: center;
     }
 
