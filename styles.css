@@ -234,7 +234,11 @@ h2 {
         margin: 2rem 0;
     }
 }
-
+@media (max-width: 800px) {
+    h1, h2 {
+        text-align: center;
+    }
+}
 @media (max-width: 600px) {
   #map .map-iframe {
     height: 200px;
