@@ -15,7 +15,13 @@ body {
     --orange: #de7122;
     --yellow: #d09d2c;
 }
-
+/* Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
 /* ------------------ NAVIGATION ------------------ */
 .nav-btn {
     display: none;
@@ -268,7 +274,7 @@ h2 {
         margin-top: 2rem;
     }
     #infos .info-container {
-    gap: 0rem;
+    gap: 2rem;
     padding: 0rem;
 }
 }
