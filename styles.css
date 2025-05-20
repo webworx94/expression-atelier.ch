@@ -9,7 +9,11 @@ body {
     background-color: #ffffff;
 }
 :root {
-    --logo-blue: #07a4fe;
+    --purple: #a03762;
+    --rose: #c74678;
+    --darkorange: #d55c3c;
+    --orange: #de7122;
+    --yellow: #d09d2c;
 }
 
 /* ------------------ NAVIGATION ------------------ */
@@ -217,7 +221,7 @@ h2 {
         order: 2;
         font-size: 1.2rem;
         margin-top: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 
     main {
@@ -228,10 +232,6 @@ h2 {
         padding: 2rem 1rem;
         min-height: 100vh;      /* wenn die Section das ganze Viewport-Height einnehmen soll */
         justify-content: center;
-    }
-
-    #infos .info-image {
-        margin: 0 0 2rem 0;
     }
 }
 @media (max-width: 800px) {
@@ -255,5 +255,20 @@ h2 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
+    .sections {
+    padding: 0rem;
 }
-/* HELLO */
+}
+@media (max-width: 400px) {
+    h1 {
+    font-size: 3.3rem;
+}
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    #infos .info-container {
+    gap: 0rem;
+    padding: 0rem;
+}
+}
