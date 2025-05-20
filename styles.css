@@ -221,7 +221,7 @@ h2 {
     }
 
     main {
-    padding-top: 17rem;
+    padding-top: 6rem;
     }
     #infos .info-container {
         flex-direction: column;
@@ -231,7 +231,7 @@ h2 {
     }
 
     #infos .info-image {
-        margin: 2rem 0;
+        margin: 0 0 2rem 0;
     }
 }
 @media (max-width: 800px) {
@@ -241,7 +241,7 @@ h2 {
 }
 @media (max-width: 600px) {
     main {
-    padding-top: 12rem;
+    padding-top: 5rem;
     }
   #map .map-iframe {
     height: 200px;
