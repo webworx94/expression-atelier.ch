@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    scroll-behavior: smooth;
 }
 body {
     font-family: Zen Maru Gothic, sans-serif;
@@ -153,6 +153,55 @@ h2 {
   display: block;
 }
 
+/* --------------- ANGEBOT --------------- */
+/* --------------- ANGEBOT --------------- */
+/* --------------- ANGEBOT --------------- */
+.angebot-container {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 3rem;
+}
+.angeboth3 {
+    font-size: 2rem;
+    font-weight: 410;
+    margin-bottom: 0.5rem;
+}
+.strich {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 3rem;
+}
+.angebot-container p {
+    font-size: 1.1rem;
+}
+blockquote {
+    font-style: italic;
+    margin: 4rem 0 2em 0;
+    padding-left: 1em;
+    border-left: 4px solid #ccc;
+    color: #555;
+  }
+
+  cite {
+    display: block;
+    margin-top: 0.5em;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+  }
+/* --------------- QUERBILD --------------- */
+.querbild-container {
+    position: relative;
+    width: 100%;
+    height: 23svh; /* Höhe des Containers */
+    overflow: hidden;
+    background-image: url('media/bild8.JPG');
+    background-size: cover;
+    background-position: center 40%;
+    margin: 7rem 0;
+}
 /* --------------- MAP --------------- */
 /* --------------- MAP --------------- */
 /* --------------- MAP --------------- */
@@ -243,6 +292,12 @@ h2 {
         min-height: 100vh;      /* wenn die Section das ganze Viewport-Height einnehmen soll */
         justify-content: center;
     }
+    .angebot-container {
+    flex-direction: column;
+    }
+    blockquote {
+        margin: 2rem 0 2em 0;
+  }
 }
 @media (max-width: 800px) {
     h1, h2 {
@@ -271,6 +326,17 @@ h2 {
     #infos .info-container {
     margin-bottom: 2rem;
 }
+.angebot-container {
+    padding: 0 1rem;
+}
+.querbild-container {
+    margin: 3rem 0 4rem 0;
+}
+}
+@media (max-width: 450px) {
+    .angeboth3 {
+        font-size: 1.75rem;
+    }
 }
 @media (max-width: 400px) {
     h1 {
