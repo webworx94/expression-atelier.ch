@@ -131,6 +131,12 @@ h2 {
     font-family: Tangerine, sans-serif;
     margin-top: 4rem;
 }
+h4 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0 0 4rem 0;
+}
 /* INFO-Section: Desktop */
 #infos .info-container {
     display: flex;
@@ -203,16 +209,22 @@ blockquote {
     width: 100%;
     height: 23svh; /* Höhe des Containers */
     overflow: hidden;
-    background-image: url('media/bild8.JPG');
+    
     background-size: cover;
     background-position: center 40%;
     margin: 7rem 0;
+}
+.querbild1 {
+    background-image: url('media/bild8.JPG');
+}
+.querbild2 {
+    background-image: url('media/bild4.JPG');
 }
 /* --------------- WORKSHOPS --------------- */
 /* --------------- WORKSHOPS --------------- */
 /* --------------- WORKSHOPS --------------- */
 .rundbild {
-    width: 160px;
+    width: 200px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 2rem auto;
