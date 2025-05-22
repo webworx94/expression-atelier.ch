@@ -228,6 +228,11 @@ blockquote {
 .querbild2 {
     background-image: url('media/bild4.JPG');
 }
+.querbild3 {
+    background-image: url('media/valerie1.JPG');
+    background-position: center 23%;
+    height: 27svh; /* Höhe des Containers */
+}
 /* --------------- WORKSHOPS --------------- */
 /* --------------- WORKSHOPS --------------- */
 /* --------------- WORKSHOPS --------------- */
