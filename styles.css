@@ -368,6 +368,93 @@ blockquote {
     aspect-ratio: 1 / 1;
   }
 }
+/* --------------- ÜBER MICH --------------- */
+/* --------------- ÜBER MICH --------------- */
+/* --------------- ÜBER MICH --------------- */
+.uebermich-container {
+  max-width: 1650px;
+  margin: 0 auto 4rem auto;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.portrait {
+  float: left;
+  max-width: 550px;
+  height: auto;
+  margin: 0 2rem 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.uebermich-text {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .portrait {
+    float: none;
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+  }
+}
+
+/* --------------- FOOTER --------------- */
+/* --------------- FOOTER --------------- */
+#site-footer {
+  padding: 2rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1650px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-contact a,
+.footer-meta a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.footer-contact a:hover,
+.footer-meta a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact {
+  flex: 1 1 300px;
+}
+
+.footer-meta {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 0.5rem;
+}
+
+.footer-credit {
+  font-size: 0.85rem;
+}
+
+/* Media Query für kleine Bildschirme */
+@media (max-width: 768px) {
+  .footer-meta {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
 
 /* Unter 768px – Galerie wird einspaltig */
 @media (max-width: 767px) {
@@ -379,9 +466,9 @@ blockquote {
 /* --------------- MAP --------------- */
 /* --------------- MAP --------------- */
 #map {
-  width: 100%;
-  overflow: hidden;
-  margin: 0 auto;      /* falls du Abstand anpassen willst, z.B. margin: 2rem 0; */
+  max-width: none;
+  width: 100vw;
+  margin: 0; /* Entferne margin auto */
 }
 
 #map .map-iframe {
