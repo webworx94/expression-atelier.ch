@@ -14,6 +14,13 @@ body {
     --darkorange: #d55c3c;
     --orange: #de7122;
     --yellow: #d09d2c;
+    --lerp-0: 1;
+    --lerp-1: 0.5787037;
+    --lerp-2: 0.2962963;
+    --lerp-3: 0.125;
+    --lerp-4: 0.037037;
+    --lerp-5: 0.0046296;
+    --lerp-6: 0;
 }
 /* Reset */
 *, *::before, *::after {
@@ -136,6 +143,7 @@ h4 {
     font-size: 5rem;
     font-weight: 400;
     margin: 0 0 4rem 0;
+    padding-top: 7rem;
 }
 /* INFO-Section: Desktop */
 #infos .info-container {
@@ -212,7 +220,7 @@ blockquote {
     
     background-size: cover;
     background-position: center 40%;
-    margin: 7rem 0;
+    margin: 7rem 0 0 0;
 }
 .querbild1 {
     background-image: url('media/bild8.JPG');
@@ -268,6 +276,100 @@ blockquote {
   color: #777;
 }
 
+/* --------------- GALLERY --------------- */
+/* --------------- GALLERY --------------- */
+/* --------------- GALLERY --------------- */
+#gallery ul {
+  display: flex;
+  padding: 0;
+  margin: 0 auto 10rem auto;
+  list-style-type: none;
+}
+
+#gallery li {
+  padding: 0;
+}
+
+#gallery img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+#gallery ul:is(:hover, :focus-within) img {
+  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+
+#gallery a {
+  outline-offset: 4px;
+}
+
+#gallery li {
+  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  transition: flex 0.2s ease;
+}
+
+#gallery li:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+#gallery li:has( + li:is(:hover, :focus-within)),
+#gallery li:is(:hover, :focus-within) + li {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+#gallery li:has( + li + li:is(:hover, :focus-within)),
+#gallery li:is(:hover, :focus-within) + li + li {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+#gallery li:has( + li + li + li:is(:hover, :focus-within)),
+#gallery li:is(:hover, :focus-within) + li + li + li {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+#gallery li:has( + li + li + li + li:is(:hover, :focus-within)),
+#gallery li:is(:hover, :focus-within) + li + li + li + li {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+#gallery li:has( + li + li + li + li + li:is(:hover, :focus-within)),
+#gallery li:is(:hover, :focus-within) + li + li + li + li + li {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+#gallery li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+#gallery li:is(:hover, :focus-within) + li + li + li + li + li + li {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
+}
+/* Unter 1200px – Galerie wird grid-basiert mit 2 Spalten */
+@media (max-width: 1199px) {
+  #gallery ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #gallery li {
+    flex: none;
+  }
+
+  #gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Unter 768px – Galerie wird einspaltig */
+@media (max-width: 767px) {
+  #gallery ul {
+    grid-template-columns: 1fr;
+  }
+}
 /* --------------- MAP --------------- */
 /* --------------- MAP --------------- */
 /* --------------- MAP --------------- */
