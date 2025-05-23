@@ -9,3 +9,13 @@ navToggle.addEventListener('click', () => {
   language.classList.toggle('show');
   document.body.classList.toggle('nav-open'); // wichtig!
 });
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth < 1000) {
+      navToggle.classList.remove('open');
+      navLinks.classList.remove('show');
+      language.classList.remove('show');
+      document.body.classList.remove('nav-open');
+    }
+  });
+});
