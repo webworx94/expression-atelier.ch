@@ -138,7 +138,7 @@ h2 {
     font-family: Tangerine, sans-serif;
     margin-top: 4rem;
 }
-h4 {
+.titels {
     text-align: center;
     font-size: 5rem;
     font-weight: 400;
@@ -738,6 +738,9 @@ blockquote {
     h1, h2 {
         text-align: center;
     }
+  .titels {
+      font-size: 3.5rem;
+  }
 }
 @media (max-width: 600px) {
     main {
@@ -758,6 +761,9 @@ blockquote {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
+  .titels {
+      font-size: 2.6rem;
+  }
     .sections {
     padding: 0rem;
 }
