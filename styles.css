@@ -378,12 +378,25 @@ blockquote {
   padding: 0 1rem;
 }
 
-.portrait {
+.portrait-wrapper {
   float: left;
   max-width: 550px;
-  height: auto;
   margin: 0 2rem 1rem 0;
+  text-align: center;
+}
+
+.portrait {
+  width: 100%;
+  height: auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.portrait-caption {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.4;
 }
 
 .uebermich-text {
@@ -392,14 +405,18 @@ blockquote {
   line-height: 1.7;
   color: #333;
 }
+
 @media (max-width: 768px) {
-  .portrait {
+  .portrait-wrapper {
     float: none;
-    display: block;
     margin: 0 auto 2rem auto;
-    width: 100%;
+  }
+
+  .portrait-caption {
+    text-align: center;
   }
 }
+
 
 /* --------------- FOOTER --------------- */
 /* --------------- FOOTER --------------- */
