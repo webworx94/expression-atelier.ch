@@ -381,13 +381,13 @@ blockquote {
     margin: 7rem 0 0 0;
 }
 .querbild1 {
-    background-image: url('media/bild8.webp');
+    background-image: url('media/gruenes-gemaelde.webp');
 }
 .querbild2 {
-    background-image: url('media/bild4.webp');
+    background-image: url('media/farbenfrohes-gemaelde.webp');
 }
 .querbild3 {
-    background-image: url('media/valerie1.webp');
+    background-image: url('media/valerie-seignez-studio.webp');
     background-position: center 23%;
     height: 27svh; /* Höhe des Containers */
 }
