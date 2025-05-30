@@ -574,8 +574,25 @@ blockquote {
     text-align: center;
   }
 }
-
-
+/* --------------- IMPRESSUM --------------- */
+/* --------------- IMPRESSUM --------------- */
+/* --------------- IMPRESSUM --------------- */
+#impressum {
+  padding: 6rem 2rem 4rem 2rem;
+  text-align: left;
+}
+#impressum h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: Literata, sans-serif;
+}
+#impressum h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+#impressum ul {
+  padding-left: 1.1rem;
+}
 /* --------------- FOOTER --------------- */
 /* --------------- FOOTER --------------- */
 #site-footer {
@@ -655,6 +672,9 @@ blockquote {
     h1 {
     font-size: 5rem;
 }
+    #impressum, #impressum h1, #impressum h2 {
+      text-align: left;
+    }
 }
 @media (max-width: 1200px) {
     h1 {
@@ -740,6 +760,13 @@ blockquote {
     }
   .titels {
       font-size: 3.5rem;
+  }
+  #impressum {
+  padding: 6rem 1rem 4rem 1rem;
+}
+  #impressum h1 {
+    font-size: 2.5rem;
+    text-align: left;
   }
 }
 @media (max-width: 600px) {
