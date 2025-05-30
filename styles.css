@@ -779,6 +779,13 @@ blockquote {
     h4 {
         font-size: 4rem;
     }
+  .maltherapie-box {
+    padding: 3rem 1rem;
+  }
+  .workshop-box {
+  padding: 2rem 1rem;
+}
+
 }
 @media (max-width: 500px) {
     h1 {
